@@ -1,0 +1,43 @@
+public class ControlStructure {
+    public static void main(String[] args) {
+        // Conditional Branches (if/else)
+        int count = 3;
+        if (count > 2) {
+            System.out.println("Count is higher than 2");
+        } else {
+            System.out.println("Count is lower or equal to 2");
+        }
+
+        // Ternary Operator (shorthand for if/else)
+        System.out.println(count > 2 ? "Count is higher than 2" : "Count is lower or equal to 2");
+
+        // Switch Statement
+        switch (count) {
+            case 0:
+                System.out.println("Count is equal to 0");
+                break;
+            case 1:
+                System.out.println("Count is equal to 1");
+                break;
+            default:
+                System.out.println("Count is either negative or higher than 1");
+                break;
+        }
+
+        // Loops (for and while)
+        for (int i = 1; i <= 50; i++) {
+            methodToRepeat();
+        }
+
+        int whileCounter = 1;
+        while (whileCounter <= 50) {
+            methodToRepeat();
+            whileCounter++;
+        }
+    }
+
+    // A dummy method to demonstrate loop repetition
+    private static void methodToRepeat() {
+        System.out.println("Method called!");
+    }
+}
